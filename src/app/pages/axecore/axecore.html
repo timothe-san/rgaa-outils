@@ -1,0 +1,23 @@
+<h1 tabindex="-1" class="section-title">axe-core</h1>
+
+<p class="text-content content-centered my-8">
+  Axe-core est une bibliothèque open source qui permet de tester automatiquement l’accessibilité d’une page web.
+  Elle détecte les violations liées aux labels, rôles ARIA, contrastes, formulaires et autres bonnes pratiques
+  RGAA/WCAG, et fournit un rapport détaillé pour corriger les problèmes.
+</p>
+
+<pre class="card overflow-x-auto text-sm font-mono text-gray-800 dark:text-gray-100">
+┌─────────┬─────────┬────────────┬────────────────────────────────────────────────────────┬─────────────────────────────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────────────────┬───────────────────────────────────────────────────┐
+│ (index) │ id      │ impact     │ tags                                                   │ description                             │ help                             │ helpUrl                                                               │ nodes                                             │
+├─────────┼─────────┼────────────┼────────────────────────────────────────────────────────┼─────────────────────────────────────────┼──────────────────────────────────┼───────────────────────────────────────────────────────────────────────┼───────────────────────────────────────────────────┤
+│ 0       │ 'label' │ 'critical' │ [ 'cat.forms', 'wcag2a', 'wcag412', ... 9 more items ] │ 'Ensure every form element has a label' │ 'Form elements must have labels' │ 'https://dequeuniversity.com/rules/axe/4.11/label?application=axeAPI' │ [ [Object], [Object], [Object], ... 1 more item ] │
+└─────────┴─────────┴────────────┴────────────────────────────────────────────────────────┴─────────────────────────────────────────┴──────────────────────────────────┴───────────────────────────────────────────────────────────────────────┴───────────────────────────────────────────────────┘
+
+AssertionError: expected 1 to be +0 // Object.is equality
+Expected :0
+Actual   :1
+&lt;Click to see difference&gt;
+
+    at /src/app/commun/formulaire/formulaire.spec.ts:37:40
+    at /node_modules/&commat;vitest/runner/dist/chunk-artifact.js:1893:20
+</pre>

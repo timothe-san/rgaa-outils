@@ -1,0 +1,106 @@
+<h1 tabindex="-1" class="text-center text-2xl font-bold">Lecteurs d'écran</h1>
+
+
+<div class="flex justify-center my-8">
+  <p class="text-content center">
+    Les lecteurs d’écran permettent aux personnes aveugles ou malvoyantes d’accéder aux contenus
+    numériques. Ils transforment le texte à l’écran en voix synthétique ou en
+    braille, comme avec <em>NVDA</em>, <em>Orca</em>, <em>VoiceOver</em> ou <em>TalkBack</em>.
+  </p>
+</div>
+
+<div class="flex justify-center my-8">
+  <table class="border border-gray-300 border-collapse text-sm w-auto">
+
+    <!-- Caption (important pour accessibilité) -->
+    <caption class="sr-only">
+      Liste des lecteurs d’écran par système d’exploitation
+    </caption>
+
+    <thead class="bg-gray-100">
+    <tr>
+      <th scope="col" class="px-4 py-3 text-left font-semibold text-gray-700 border-b">
+        OS
+      </th>
+      <th scope="col" class="px-4 py-3 text-left font-semibold text-gray-700 border-b">
+        Outil
+      </th>
+      <th scope="col" class="px-4 py-3 text-left font-semibold text-gray-700 border-b">
+        Natif
+      </th>
+      <th scope="col" class="px-4 py-3 text-left font-semibold text-gray-700 border-b">
+        Lien
+      </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+      <td class="px-4 py-3 border-b">Windows</td>
+      <td class="px-4 py-3 border-b">NVDA</td>
+      <td class="px-4 py-3 border-b">Non</td>
+      <td class="px-4 py-3 border-b">
+        <a
+          href="https://www.nvaccess.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          Site officiel
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px-4 py-3 border-b">Linux</td>
+      <td class="px-4 py-3 border-b">Orca</td>
+      <td class="px-4 py-3 border-b">Oui (GNOME)</td>
+      <td class="px-4 py-3 border-b">
+        <a
+          href="https://help.gnome.org/users/orca/stable/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          Documentation
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px-4 py-3 border-b">macOS</td>
+      <td class="px-4 py-3 border-b">VoiceOver</td>
+      <td class="px-4 py-3 border-b">Oui</td>
+      <td class="px-4 py-3 border-b">
+        <a
+          href="https://www.apple.com/accessibility/mac/vision/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          Accessibilité Apple
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px-4 py-3">Android</td>
+      <td class="px-4 py-3">TalkBack</td>
+      <td class="px-4 py-3">Oui</td>
+      <td class="px-4 py-3">
+        <a
+          href="https://support.google.com/accessibility/android/answer/6283677"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link"
+        >
+          Aide Google
+        </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+</div>
+<app-formulaire/>

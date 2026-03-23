@@ -1,0 +1,52 @@
+<header class="border-b border-gray-200 bg-white transition-colors duration-300 dark:border-gray-700 dark:bg-gray-800">
+  <div class="site-container">
+    <div class="flex h-16 items-center justify-between">
+      <nav class="hidden gap-8 md:flex" aria-label="Navigation principale">
+        <a routerLink="/" routerLinkActive="nav-link-active" class="nav-link">Accueil</a>
+        <a routerLink="/lecteur" routerLinkActive="nav-link-active" class="nav-link">Lecteur</a>
+        <a routerLink="/wave" routerLinkActive="nav-link-active" class="nav-link">Wave</a>
+        <a routerLink="/axe-core" routerLinkActive="nav-link-active" class="nav-link">Axe-core</a>
+        <a routerLink="/ia" routerLinkActive="nav-link-active" class="nav-link">IA</a>
+        <a routerLink="/sources" routerLinkActive="nav-link-active" class="nav-link">Sources</a>
+      </nav>
+
+      <button
+        type="button"
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="isOpen"
+        aria-controls="mobile-menu"
+        aria-label="Ouvrir le menu"
+        class="md:hidden rounded p-2 text-gray-700 dark:text-gray-200"
+      >
+        <span aria-hidden="true">☰</span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <div class="flex justify-center md:justify-end">
+        <button
+          type="button"
+          (click)="toggleTheme()"
+          [attr.aria-pressed]="isDark"
+          aria-label="Changer le thème clair/sombre"
+          class="theme-toggle"
+        >
+          <span aria-hidden="true">{{ isDark ? '🌙' : '☀️' }}</span>
+          <span class="sr-only">{{ isDark ? 'Mode sombre activé' : 'Mode clair activé' }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  @if (isOpen) {
+  <div id="mobile-menu" class="site-container pb-4 md:hidden">
+    <nav aria-label="Navigation mobile" class="flex flex-col gap-2">
+      <a routerLink="/" class="mobile-link">Accueil</a>
+      <a routerLink="/lecteur" class="mobile-link">Lecteur</a>
+      <a routerLink="/wave" class="mobile-link">Wave</a>
+      <a routerLink="/axe-core" class="mobile-link">Axe-core</a>
+      <a routerLink="/ia" class="mobile-link">IA</a>
+      <a routerLink="/sources" class="mobile-link">Sources</a>
+    </nav>
+  </div>
+}
+</header>

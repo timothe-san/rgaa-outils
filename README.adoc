@@ -1,0 +1,84 @@
+= RGAA-Outils
+:toc:
+:icons: font
+:source-highlighter: rouge
+
+[badge]
+https://opensource.org/licenses/MIT
+
+RGAA-Outils est un projet open-source développé en *Angular 21* et stylisé avec *Tailwind CSS 4.2*.
+Ce projet peut servir de support pour s'initier au question de l'accessibilité des sites web est des outils facilitant ça mise en place
+
+== Fonctionnalités
+
+- Stack Technique : Angular 21 & Tailwind CSS 4.2
+- Exemples de formulaires accessibles conformes au RGAA / WCAG
+- Exemple de Tests unitaires avec l'intégration d'axe-core pour l'accessibilité
+
+== Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé :
+
+- Node.js >= 20
+- npm ou yarn
+- Angular CLI compatible avec Angular 21
+
+== Installation
+
+1. Cloner le dépôt :
+
+----
+git clone https://github.com/ton-utilisateur/monprojet.git
+cd monprojet
+----
+
+2. Installer les dépendances :
+
+----
+npm install
+# ou
+yarn install
+----
+
+3. Lancer le projet en mode développement :
+
+----
+ng serve
+----
+
+L'application sera accessible sur `http://localhost:4200/`.
+
+== Tests
+
+Pour exécuter les tests unitaires :
+
+----
+ng test
+----
+
+Les tests incluent des vérifications d'accessibilité avec *axe-core*.
+
+== Styles
+
+- Tailwind CSS 4.2 est utilisé pour le design
+- La configuration Tailwind se trouve dans `tailwind.config.js`
+
+== Contribution
+
+Les contributions sont les bienvenues !
+
+1. Forkez le dépôt
+2. Créez votre branche (`git checkout -b feature/ma-fonctionnalite`)
+3. Committez vos changements (`git commit -m 'Ajout d’une fonctionnalité'`)
+4. Poussez sur votre branche (`git push origin feature/ma-fonctionnalite`)
+5. Ouvrez une Pull Request
+
+== Licence
+
+Ce projet est sous licence **GNU GENERAL PUBLIC LICENSE v3** (GPLv3).
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+
+Tout le monde est autorisé à copier et distribuer des copies exactes de ce document de licence, mais il est interdit d'en modifier le contenu.
+
+Pour plus d’informations sur la licence : link:https://www.gnu.org/licenses/gpl-3.0.html[GNU GPL v3].
